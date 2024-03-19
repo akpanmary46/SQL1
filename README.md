@@ -1,5 +1,7 @@
 # SQL PROJECT
 
+![](https://github.com/akpanmary46/SQL1/blob/main/IMAGE%20OF%20DEFORESTATION.png)
+
 # PROBLEM STATEMENT
 
 
