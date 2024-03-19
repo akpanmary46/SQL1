@@ -32,10 +32,25 @@ SELECT *FROM FOREST WHERE FOREST_AREA_SQKM IS NULL;
 
 ![](https://github.com/akpanmary46/SQL1/blob/main/DATA%20CLEANING%201.png)
 
+SET FOREST_AREA_SQKM = CASE WHEN FOREST_AREA_SQKM IS NULL THEN 0
+ ELSE FOREST_AREA_SQKM
+ ENDS;
+![](https://github.com/akpanmary46/SQL1/blob/main/CLEANING%202.png)
+
+SET FOREST_AREA_SQKM = ROUND (FOREST_AREA_SQKM)
 
 
+BEFORE
+![](https://github.com/akpanmary46/SQL1/blob/main/DIRTY%20DATA%20DECIMAL.png)
 
+AFTER
+![](https://github.com/akpanmary46/SQL1/blob/main/CLEAN%20DECIMAL.png)
 
+SET TOTAL_AREA_SQ_MI = WHEN TOTAL_SQ_MI IS NULL THEN 0
+ ELSE TOTAL_AREA_SQ_MI
+ ENDS;
+ 
+ ![](https://github.com/akpanmary46/SQL1/blob/main/CLEAN%20LAND%20WHEN%20IS%200.png)
 
 
 
